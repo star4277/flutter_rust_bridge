@@ -6,10 +6,18 @@ environment:
   sdk: ">=3.9.2 <4.0.0"
 
 dependencies:
-  hooks: ^2.0.2
+  hooks:
+    git:
+      url: https://gitcode.com/star4277/fluttertpc_dart_native
+      path: pkgs/hooks
+      ref: flutter_3.44.9_deps
   logging: ^1.3.0
   meta: ^1.16.0
-  native_toolchain_rust: ^1.0.4
+  native_toolchain_rust:
+    git:
+      url: https://gitcode.com/star4277/fluttertpc_dart_native
+      path: pkgs/native_toolchain_rust
+      ref: flutter_3.44.9_deps
 
 dev_dependencies:
   flutter_lints: ^3.0.1
